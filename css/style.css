@@ -918,6 +918,17 @@ body::after {
   font-family: "Cormorant Upright";
 }
 
+*.button {
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+*.button:hover {
+  background-color: rgba(220, 202, 135, 0.7607843137);
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -935,6 +946,9 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #ffffff;
 }
 
